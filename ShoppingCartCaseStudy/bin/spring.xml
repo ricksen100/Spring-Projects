@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="shop" class="com.cg.spring.CheckOut"> 
+        
+        
+        <property name="product">
+          <list>
+			<ref bean="product"/>
+			<ref bean="product2"/>
+			<ref bean="product3"/>
+          </list>
+         </property>
+       
+         
+        
+         </bean>
+         
+         
+          <bean id="product" class="com.cg.spring.ShoppingCart">
+        <property name="pid" value="05"></property>
+         <property name="pname" value="Disc"></property>
+         <property name="salescount" value="10"></property>
+          
+        </bean>
+        
+        
+          <bean id="product2" class="com.cg.spring.ShoppingCart">
+        <property name="pid" value="03"></property>
+        <property name="pname" value="Battery"></property>
+         <property name="salescount" value="5"></property>
+          
+        </bean>
+        
+        
+          <bean id="product3" class="com.cg.spring.ShoppingCart">
+        <property name="pid" value="01"></property>
+        <property name="pname" value="Phone"></property>
+         <property name="salescount" value="50"></property>
+          
+        </bean>
+        
+        
+        
+         </beans>
