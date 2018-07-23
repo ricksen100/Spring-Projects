@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="hello" class="com.cg.spring.HelloWorld"> 
+        
+        <property name="message" value="Welcome"></property>
+        
+        <property name="holiday">
+          <list>
+			<ref bean="holiday1"/>
+			
+          </list>
+         </property>
+         </bean>
+         
+         
+         
+         
+          <bean id="holiday1" class="com.cg.spring.Holiday">
+        <property name="month" value="05"></property>
+         <property name="day" value="12"></property>
+          <property name="greeting" value="Hi"></property>
+        </bean>
+        
+        
+        
+         </beans>
