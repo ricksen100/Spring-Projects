@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="employee" class="com.cg.spring.core.Employee"> 
+        
+        <property name="id" value="123"></property>
+         <property name="name" value="mukesh"></property>
+          <property name="salary" value="25000.00"></property>
+        
+        </bean>
+        <bean id="customer" class="com.cg.spring.core.Customer"> </bean> 
+         
+         
+         <bean id="student" class="com.cg.spring.core.Student">
+         <constructor-arg value="101"></constructor-arg> 
+          <constructor-arg value="Dipyaman"></constructor-arg> 
+           <constructor-arg value="CSE"></constructor-arg> 
+          </bean>
+        </beans>
